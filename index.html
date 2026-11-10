@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sifang for Software Solutions — حلول برمجية للعيادات وإدارة عيادة النطق والسمع.">
+  <title>Sifang for Software Solutions</title>
+  <style>
+    :root{
+      --ink:#10233f;
+      --muted:#5f6f86;
+      --line:#dbe6f3;
+      --brand:#0b6bcb;
+      --brand-2:#0a9f9a;
+      --bg:#f4f8fd;
+      --card:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(950px 500px at 85% -10%, #dff3ff 0%, transparent 60%),
+        radial-gradient(800px 480px at -10% 20%, #d9f7f1 0%, transparent 55%),
+        var(--bg);
+      min-height:100vh;
+    }
+    .wrap{max-width:1080px;margin:0 auto;padding:28px 22px 44px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+    .mark{
+      width:46px;height:46px;border-radius:14px;display:grid;place-items:center;
+      color:#fff;font-weight:800;font-size:24px;
+      background:linear-gradient(140deg,var(--brand),var(--brand-2));
+      box-shadow:0 10px 24px rgba(11,107,203,.25);
+    }
+    .brand strong{display:block;font-size:18px;letter-spacing:.2px}
+    .brand span{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+    .pill{
+      font-size:12px;color:#076e69;background:#d9f7f1;border:1px solid #b9ece5;
+      padding:7px 12px;border-radius:999px;white-space:nowrap
+    }
+    main{padding-top:64px}
+    .hero{max-width:760px}
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--brand);
+      background:#e6f2ff;border:1px solid #cfe5ff;padding:8px 12px;border-radius:999px
+    }
+    h1{font-size:clamp(34px,6vw,62px);line-height:1.12;margin:20px 0 12px;letter-spacing:-1px}
+    h1 span{color:var(--brand)}
+    .lead{font-size:clamp(16px,2.2vw,20px);line-height:1.8;color:var(--muted);margin:0;max-width:650px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;
+      padding:14px 22px;border-radius:14px;font-weight:700;font-size:15px;transition:.2s
+    }
+    .btn-primary{background:var(--brand);color:#fff;box-shadow:0 12px 26px rgba(11,107,203,.25)}
+    .btn-primary:hover{transform:translateY(-1px);background:#095fb6}
+    .btn-ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+    .btn-ghost:hover{border-color:#b9cce4}
+    .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:58px}
+    .card{
+      background:rgba(255,255,255,.86);border:1px solid rgba(219,230,243,.9);border-radius:18px;
+      padding:18px;box-shadow:0 12px 34px rgba(16,35,63,.06);backdrop-filter:blur(6px)
+    }
+    .card b{display:block;font-size:15px;margin-bottom:6px}
+    .card small{color:var(--muted);line-height:1.7;font-size:12.5px}
+    .notice{
+      margin-top:26px;background:#fff;border:1px solid var(--line);border-radius:16px;
+      padding:14px 16px;color:var(--muted);font-size:13px;line-height:1.7
+    }
+    .notice strong{color:var(--ink)}
+    footer{margin-top:52px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    @media (max-width:820px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media (max-width:520px){.wrap{padding:20px 16px 34px}main{padding-top:40px}.grid{grid-template-columns:1fr}.pill{display:none}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="./" aria-label="Sifang for Software Solutions">
+        <div class="mark">S</div>
+        <div>
+          <strong>Sifang for Software Solutions</strong>
+          <span>حلول برمجية للعيادات</span>
+        </div>
+      </a>
+      <div class="pill">منصة إدارة العيادة</div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow">Sifang Clinic Suite</div>
+        <h1>إدارة عيادتك<br><span>بكل وضوح وسهولة.</span></h1>
+        <p class="lead">
+          نظام متكامل لإدارة المرضى والمواعيد والجلسات والحسابات،
+          بواجهة عربية واضحة تناسب العمل اليومي داخل العيادة.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://reform-connector-guitar-ensemble.trycloudflare.com/admin/login">
+            دخول نظام العيادة
+            <span aria-hidden="true">←</span>
+          </a>
+          <a class="btn btn-ghost" href="#features">استعراض المزايا</a>
+        </div>
+      </section>
+
+      <section id="features" class="grid" aria-label="مزايا النظام">
+        <article class="card"><b>إدارة المرضى</b><small>ملفات المرضى، بيانات التواصل، والملاحظات في مكان واحد.</small></article>
+        <article class="card"><b>المواعيد والجلسات</b><small>تنظيم المواعيد اليومية ومتابعة حضور الجلسات.</small></article>
+        <article class="card"><b>التقارير</b><small>تقارير شهرية وأداء العيادة بشكل واضح ومختصر.</small></article>
+        <article class="card"><b>الحسابات</b><small>متابعة المدفوعات والباقات والمبالغ المستحقة.</small></article>
+      </section>
+
+      <div class="notice">
+        <strong>ملاحظة:</strong> هذه نسخة تشغيل تجريبية. رابط الدخول الحالي مؤقت وقد يتغيّر عند إعادة تشغيل خدمة الاستضافة.
+      </div>
+    </main>
+
+    <footer>
+      <span>Sifang for Software Solutions © 2026</span>
+      <span>Clinic Management Suite</span>
+    </footer>
+  </div>
+</body>
+</html>
