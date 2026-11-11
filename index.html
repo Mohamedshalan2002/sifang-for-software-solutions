@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sifang for Software Solutions — حلول برمجية للعيادات وإدارة عيادة النطق والسمع.">
+  <meta name="description" content="Sifang for Software Solutions — أنظمة إدارة العيادات والموارد البشرية.">
   <title>Sifang for Software Solutions</title>
   <style>
     :root{
@@ -71,6 +71,15 @@
       padding:14px 16px;color:var(--muted);font-size:13px;line-height:1.7
     }
     .notice strong{color:var(--ink)}
+    .suite{
+      margin-top:26px;background:#fff;border:1px solid var(--line);border-radius:18px;
+      padding:22px;display:flex;align-items:center;justify-content:space-between;gap:18px;
+      flex-wrap:wrap;box-shadow:0 12px 34px rgba(16,35,63,.05)
+    }
+    .suite h2{font-size:20px;margin:10px 0 6px}
+    .suite p{margin:0;color:var(--muted);font-size:14px;line-height:1.7;max-width:620px}
+    .suite .eyebrow{font-size:12px;padding:6px 10px}
+    .suite .btn{padding:12px 18px;white-space:nowrap}
     footer{margin-top:52px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     @media (max-width:820px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media (max-width:520px){.wrap{padding:20px 16px 34px}main{padding-top:40px}.grid{grid-template-columns:1fr}.pill{display:none}}
@@ -113,6 +122,18 @@
         <article class="card"><b>الحسابات</b><small>متابعة المدفوعات والباقات والمبالغ المستحقة.</small></article>
       </section>
 
+      <section class="suite" aria-label="نظام SIFANG HR">
+        <div>
+          <div class="eyebrow">SIFANG HR</div>
+          <h2>نظام الموارد البشرية</h2>
+          <p>إدارة الموظفين والحضور والإجازات والرواتب، مع لوحة إدارة وسجل خدمة ذاتية للموظف.</p>
+        </div>
+        <a class="btn btn-ghost" href="https://sifang-hr-app.vercel.app/login">
+          دخول نظام HR
+          <span aria-hidden="true">←</span>
+        </a>
+      </section>
+
       <div class="notice">
         <strong>ملاحظة:</strong> هذه نسخة تشغيل تجريبية. رابط الدخول الحالي مؤقت وقد يتغيّر عند إعادة تشغيل خدمة الاستضافة.
       </div>
@@ -120,7 +141,7 @@
 
     <footer>
       <span>Sifang for Software Solutions © 2026</span>
-      <span>Clinic Management Suite</span>
+      <span>Clinic &amp; HR Suite</span>
     </footer>
   </div>
 </body>
